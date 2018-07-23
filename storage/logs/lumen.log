@@ -1,0 +1,66 @@
+[2018-07-23 11:38:14] production.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '?' in /var/www/html/lumen-package/vendor/symfony/http-foundation/Response.php:491
+Stack trace:
+#0 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/var/www/html/l...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Compone...')
+#2 /var/www/html/lumen-package/vendor/illuminate/http/Response.php(13): spl_autoload_call('Symfony\\Compone...')
+#3 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(440): include('/var/www/html/l...')
+#4 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/var/www/html/l...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Http...')
+#6 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): spl_autoload_call('Illuminate\\Http...')
+#7 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Laravel\Lumen\Application->prepareResponse('Lumen (5.6.4) (...')
+#8 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#11 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#13 /var/www/html/lumen-package/public/index.php(28): Laravel\Lumen\Application->run()
+#14 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '?' at /var/www/html/lumen-package/vendor/symfony/http-foundation/Response.php:491)
+[stacktrace]
+#0 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile('/var/www/html/l...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Symfony\\\\Compone...')
+#2 /var/www/html/lumen-package/vendor/illuminate/http/Response.php(13): spl_autoload_call('Symfony\\\\Compone...')
+#3 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(440): include('/var/www/html/l...')
+#4 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile('/var/www/html/l...')
+#5 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Http...')
+#6 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): spl_autoload_call('Illuminate\\\\Http...')
+#7 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(286): Laravel\\Lumen\\Application->prepareResponse('Lumen (5.6.4) (...')
+#8 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(260): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#9 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(160): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#10 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(413): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(166): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\\Lumen\\Application->dispatch(NULL)
+#13 /var/www/html/lumen-package/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2018-07-23 11:38:14] production.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '?', expecting variable (T_VARIABLE) in /var/www/html/lumen-package/vendor/symfony/debug/Exception/FlattenException.php:41
+Stack trace:
+#0 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/var/www/html/l...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Symfony\\Compone...')
+#2 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(95): spl_autoload_call('Symfony\\Compone...')
+#3 /var/www/html/lumen-package/app/Exceptions/Handler.php(48): Laravel\Lumen\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\Debug\Exception\FatalThrowableError))
+#4 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(105): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\Debug\Exception\FatalThrowableError))
+#5 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(170): Laravel\Lumen\Application->sendExceptionToHandler(Object(Symfony\Component\Debug\Exception\FatalThrowableError))
+#6 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\Lumen\Application->dispatch(NULL)
+#7 /var/www/html/lumen-package/public/index.php(28): Laravel\Lumen\Application->run()
+#8 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '?', expecting variable (T_VARIABLE) at /var/www/html/lumen-package/vendor/symfony/debug/Exception/FlattenException.php:41)
+[stacktrace]
+#0 /var/www/html/lumen-package/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile('/var/www/html/l...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Symfony\\\\Compone...')
+#2 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Exceptions/Handler.php(95): spl_autoload_call('Symfony\\\\Compone...')
+#3 /var/www/html/lumen-package/app/Exceptions/Handler.php(48): Laravel\\Lumen\\Exceptions\\Handler->render(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#4 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(105): App\\Exceptions\\Handler->render(Object(Illuminate\\Http\\Request), Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#5 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(170): Laravel\\Lumen\\Application->sendExceptionToHandler(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError))
+#6 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(107): Laravel\\Lumen\\Application->dispatch(NULL)
+#7 /var/www/html/lumen-package/public/index.php(28): Laravel\\Lumen\\Application->run()
+#8 {main}
+"} 
+[2018-07-23 11:38:14] production.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Exception thrown without a stack frame in Unknown:0
+Stack trace:
+#0 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 16): Exception thrown without a stack frame at Unknown:0)
+[stacktrace]
+#0 /var/www/html/lumen-package/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\\Lumen\\Application->handleShutdown()
+#1 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#2 {main}
+"} 
